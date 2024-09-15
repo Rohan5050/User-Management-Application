@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:#212529;
+  width: 100%;
+  height: auto;
+  color: #0d76e6;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 20px;
+}
+
+
+.form-container h1 {
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+.aln-txtbox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 20px;
+}
+
+
+.aln-txtbox input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; 
+  box-sizing: border-box; 
+
+}
+
+
+.btn-aln {
+  margin: 0 auto;
+  background-color: hsl(120, 83%, 61%);
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left; 
+  margin: 22px auto;
+}
+
+th, td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.btn-style-2 {
+  margin-right: 5px; 
+}
+
+.btn-style-1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  background-color:yellow;
+  cursor: pointer;
+}
+
+.btn-style-2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) {
+  .aln-txtbox {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .aln-txtbox input {
+    flex: 1 1 calc(33.33% - 20px); 
+    margin-right: 10px;
+  }
+
+  .aln-txtbox input:last-child {
+    margin-right: 0;
+  }
+
+  .btn-aln {
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+
+
+  .aln-txtbox input , .hd-aln {
+    position: relative;
+    right: -72px;
+
+    
+  }
+
+  .btn-aln {
+    position: relative;
+    right: -56px;
+  }
+
+
+}
